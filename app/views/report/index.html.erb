@@ -1,0 +1,8 @@
+<h1>10 most "popular" devices at <%= @date %></h1>
+<ol>
+  <% @reports.each do |report| %>
+    <li><%= report.report_id %>  <%= report.report_type %>  <%= report.report_status %></li>
+  <% end %>
+</ol>
+
+<%= link_to 'Back', root_path %>
